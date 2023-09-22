@@ -15,11 +15,12 @@
 
 - tao giao dien login/register
 - tao schema.prisma; ket noi **MongoDB**
+- day schema len MongoDb `npx prisma db push`
+- tao API `nextauth`, `register`
 
 ## noi dung thu hien
 
-- day schema len MongoDb `npx prisma db push`
-- tao API `nextauth`, `register`
+- tao api `sinIn`
 
 # gio hoc
 
