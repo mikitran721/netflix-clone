@@ -11,7 +11,7 @@
 # Noi dung
 
 - tao giao dien login/register
--
+- tao schema.prisma; ket noi MongoDB
 
 # gio hoc
 
