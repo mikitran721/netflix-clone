@@ -9,10 +9,19 @@
 - cai `npm i react-icons`
 - cai `npm i @next-auth/prisma-adapter`
 - cai `npm i cookies`
+- cai `npm i swr` hook fetching data.
 
 ## luu y cai dat
 
 - can init `prisma: npx prisma init`;
+
+## Huy khong commit file .env.\*
+
+```javascript
+git rm env.local --cached
+git rm env.staging --cached
+git commit -m "Stopped tracking env.local, and env.staging"
+```
 
 # Noi dung
 
@@ -34,6 +43,10 @@
 ## noi dung thu hien
 
 - ap dung google & githup login
+- cau hinh auth cho google & next-auth, search `google developer console`
+- tai `redirect URIs` nhap `http://localhost:3000/api/auth/callback/google`
+- logout & redirect 'auth'
+-
 
 # gio hoc
 
