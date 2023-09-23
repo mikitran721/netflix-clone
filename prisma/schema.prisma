@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = env("DATABASE_URL")
+  url      = env("MONGODB_URI")
 }
 
 model User {
@@ -15,21 +15,23 @@ model User {
   name           String
   image          String?
   email          String?   @unique
-  emailVerified  DateTime?
+  emailVerified  DateTime? @map("email_verified")
   hashedPassword String?
   createdAt      DateTime  @default(now())
   updatedAt      DateTime  @updatedAt
-  favouriteIds   String[]  @db.ObjectId
-  session        Session[]
-  accounts       Acount[]
+  sessions       Session[]
+  accounts       Account[]
+  favoriteIds    String[]  @db.ObjectId
+
+  @@map("users")
 }
 
-model Acount {
+model Account {
   id                String  @id @default(auto()) @map("_id") @db.ObjectId
-  userId            String  @db.ObjectId
+  userId            String  @map("user_id") @db.ObjectId
   type              String
   provider          String
-  providerAccountId String
+  providerAccountId String  @map("provider_account_id")
   refresh_token     String? @db.String
   access_token      String? @db.String
   expires_at        Int?
@@ -38,10 +40,10 @@ model Acount {
   id_token          String? @db.String
   session_state     String?
 
-  // quan he 1-n voi User
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
+  @@map("accounts")
 }
 
 model Session {

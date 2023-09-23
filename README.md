@@ -6,6 +6,9 @@
 - cai `npm i next-auth`
 - cai `npm i bcrypt` them hashed cho password & `npm i -D @types/bcrypt`
 - cai `npm i axios`
+- cai `npm i react-icons`
+- cai `npm i @next-auth/prisma-adapter`
+- cai `npm i cookies`
 
 ## luu y cai dat
 
@@ -17,11 +20,21 @@
 - tao schema.prisma; ket noi **MongoDB**
 - day schema len MongoDb `npx prisma db push`
 - tao API `nextauth`, `register`
+- tao api `sinIn`
+- su dung `openssl rand base64 32` de tao secret code
+
+# sua loi `getUserByAccount` prisma-mongodb-next.auth
+
+- cai `npm install @auth/mongodb-adapter mongodb`
+- bo sung code: `lib\mongodb.ts` & `types\mongodb.d.ts`
+- link huong dan: https://authjs.dev/reference/adapter/mongodb#installation
+- Link github: https://github.com/vercel/next.js/blob/canary/examples/with-mongodb/types/mongodb.d.ts
+- Them config vao file `[...nextauth].ts`
 
 ## noi dung thu hien
 
-- tao api `sinIn`
+- ap dung google & githup login
 
 # gio hoc
 
-`27:08`
+`1:20:00`
