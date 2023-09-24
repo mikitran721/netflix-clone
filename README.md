@@ -10,6 +10,7 @@
 - cai `npm i @next-auth/prisma-adapter`
 - cai `npm i cookies`
 - cai `npm i swr` hook fetching data.
+- cai dat `npm i lodash` vs `npm i -D @types/lodash`
 
 ## luu y cai dat
 
@@ -38,6 +39,7 @@ git commit -m "Stopped tracking env.local, and env.staging"
 - cau hinh auth cho google & next-auth, search `google developer console`
 - tai `redirect URIs` nhap `http://localhost:3000/api/auth/callback/google`
 - logout & redirect 'auth'
+- profile page; layout for Navbar
 
 # sua loi `getUserByAccount` prisma-mongodb-next.auth
 
@@ -49,7 +51,7 @@ git commit -m "Stopped tracking env.local, and env.staging"
 
 ## noi dung thu hien
 
-- profile page; layout for Navbar
+- component `Billboard`,`MovieList`
 
 # gio hoc
 
