@@ -13,7 +13,10 @@
 
 ## luu y cai dat
 
-- can init `prisma: npx prisma init`;
+- can init prisma: `npx prisma init`; #neu co folder prisma/schema se ko dung dc code nay
+- sau khi dinh nghia model can push len DB.server `npx prisma db pull`
+- generate Prisma client `npx prisma generate`
+- sau cac buoc tren co the query data tu DB.server
 
 ## Huy khong commit file .env.\*
 
@@ -31,6 +34,10 @@ git commit -m "Stopped tracking env.local, and env.staging"
 - tao API `nextauth`, `register`
 - tao api `sinIn`
 - su dung `openssl rand base64 32` de tao secret code
+- ap dung google & githup login
+- cau hinh auth cho google & next-auth, search `google developer console`
+- tai `redirect URIs` nhap `http://localhost:3000/api/auth/callback/google`
+- logout & redirect 'auth'
 
 # sua loi `getUserByAccount` prisma-mongodb-next.auth
 
@@ -42,11 +49,7 @@ git commit -m "Stopped tracking env.local, and env.staging"
 
 ## noi dung thu hien
 
-- ap dung google & githup login
-- cau hinh auth cho google & next-auth, search `google developer console`
-- tai `redirect URIs` nhap `http://localhost:3000/api/auth/callback/google`
-- logout & redirect 'auth'
--
+- profile page; layout for Navbar
 
 # gio hoc
 

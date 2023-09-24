@@ -1,4 +1,4 @@
-import NextAuth from "next-auth";
+import NextAuth, { AuthOptions } from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import {compare} from 'bcrypt'
 
@@ -11,7 +11,9 @@ import prismadb from '@/lib/prismadb'
 import { MongoDBAdapter } from "@auth/mongodb-adapter"
 import clientPromise from "@/lib/mongodb"
 
-export default NextAuth({
+const dbName = process.env.DATABASE_NAME || '';
+
+export const authOptions: AuthOptions = {
     providers: [
         // phuc vu login Github vs Google
         GithubProvider({
@@ -64,7 +66,7 @@ export default NextAuth({
     },
     debug: process.env.NODE_ENV === 'development',
     // adapter: PrismaAdapter(prisma),
-    adapter: MongoDBAdapter(clientPromise),
+    adapter: MongoDBAdapter(clientPromise,{databaseName:dbName}),
     session:{
         strategy:'jwt'
     },
@@ -72,5 +74,6 @@ export default NextAuth({
         secret:process.env.NEXTAUTH_JWT_SECRET,
     },
     secret:process.env.NEXTAUTH_SECRET
-})
+}
 
+export default NextAuth(authOptions);
