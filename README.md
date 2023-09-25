@@ -11,6 +11,8 @@
 - cai `npm i cookies`
 - cai `npm i swr` hook fetching data.
 - cai dat `npm i lodash` vs `npm i -D @types/lodash`
+- cai dat `npm i zustand` - modal
+-
 
 ## luu y cai dat
 
@@ -42,6 +44,8 @@ git commit -m "Stopped tracking env.local, and env.staging"
 - profile page; layout for Navbar
 - component `Billboard`,`MovieList`
 - build `favorite movies`: addnew, delete, show
+- page play 1 movie
+-
 
 # sua loi `getUserByAccount` prisma-mongodb-next.auth
 
@@ -53,8 +57,4 @@ git commit -m "Stopped tracking env.local, and env.staging"
 
 ## noi dung thu hien
 
-- page play 1 movie
-
-# gio hoc
-
-`1:20:00`
+- show modal of movie info
