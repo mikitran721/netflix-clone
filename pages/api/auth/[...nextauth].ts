@@ -66,7 +66,7 @@ export const authOptions: AuthOptions = {
     },
     debug: process.env.NODE_ENV === 'development',
     // adapter: PrismaAdapter(prisma),
-    adapter: MongoDBAdapter(clientPromise,{databaseName:dbName}),
+    adapter: MongoDBAdapter(clientPromise), //fix bug
     session:{
         strategy:'jwt'
     },

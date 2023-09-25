@@ -45,13 +45,14 @@ git commit -m "Stopped tracking env.local, and env.staging"
 
 - cai `npm install @auth/mongodb-adapter mongodb`
 - bo sung code: `lib\mongodb.ts` & `types\mongodb.d.ts`
+- Them config vao file api `[...nextauth].ts`
 - link huong dan: https://authjs.dev/reference/adapter/mongodb#installation
 - Link github: https://github.com/vercel/next.js/blob/canary/examples/with-mongodb/types/mongodb.d.ts
-- Them config vao file `[...nextauth].ts`
 
 ## noi dung thu hien
 
 - component `Billboard`,`MovieList`
+-
 
 # gio hoc
 
