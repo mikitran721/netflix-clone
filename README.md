@@ -40,6 +40,8 @@ git commit -m "Stopped tracking env.local, and env.staging"
 - tai `redirect URIs` nhap `http://localhost:3000/api/auth/callback/google`
 - logout & redirect 'auth'
 - profile page; layout for Navbar
+- component `Billboard`,`MovieList`
+- build `favorite movies`: addnew, delete, show
 
 # sua loi `getUserByAccount` prisma-mongodb-next.auth
 
@@ -50,9 +52,6 @@ git commit -m "Stopped tracking env.local, and env.staging"
 - Link github: https://github.com/vercel/next.js/blob/canary/examples/with-mongodb/types/mongodb.d.ts
 
 ## noi dung thu hien
-
-- component `Billboard`,`MovieList`
--
 
 # gio hoc
 
