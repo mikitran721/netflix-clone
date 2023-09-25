@@ -53,6 +53,8 @@ git commit -m "Stopped tracking env.local, and env.staging"
 
 ## noi dung thu hien
 
+- page play 1 movie
+
 # gio hoc
 
 `1:20:00`
